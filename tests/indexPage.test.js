@@ -1,4 +1,4 @@
-// const TEST_URL = 'http://ecosia.org';
+// const TEST_URL = 'https://www.staging.ecosia.org/';
 
 // module.exports = {
 //   afterEach: function (browser) {
@@ -9,11 +9,11 @@
 //   'Index page': function (browser) {
 //     browser
 //       .url(TEST_URL)
-//       //.elementIdDisplayed('[data-test-id="claims-values-section-icon"]')
 //       .assert.elementPresent('[data-test-id="index-header"]')
+//       .moveToElement('.footer-bcorp', 0, 0)
 //       //.pause(20000)
 //       .percySnapshot("Index page -> Header", { 
-//           widths: [768, 992, 1200],
+//           widths: [375, 768, 992, 1200, 1280],
 //           percyCSS: '[data-test-id="counter"] { visibility: hidden; }', })
 //   }
 // };

@@ -9,6 +9,7 @@ module.exports = {
   'Map Snippet': function (browser) {
     browser
       .url(TEST_URL)
+      .waitForElementVisible('[data-test-id="mainline"]')
       .assert.elementPresent('[data-test-id="mainline"]')
       .percySnapshot("Map Snippet", { 
           widths: [375, 768, 992, 1200, 1280],
